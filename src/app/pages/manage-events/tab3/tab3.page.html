@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+<!--      {{'label.manage.events' | translate}}-->
+      manage events
+    </ion-title>
+
+    <ion-buttons slot="end" class="ion-margin-end" *ngIf="auth.isLogged">
+      <ion-icon name="power-outline" (click)="logout()"></ion-icon>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <app-login *ngIf="!auth.isLogged"></app-login>
+  <app-add-edit-events *ngIf="auth.isLogged"></app-add-edit-events>
+</ion-content>

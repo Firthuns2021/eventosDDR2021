@@ -1,0 +1,10 @@
+{
+  "label.notifications": "Notificaciones",
+  "label.events": "Eventos",
+  "label.manage.events": "Gestión",
+  "label.email": "Email",
+  "label.password": "Password",
+  "label.login": "Login",
+  "label.login.success": "Logueado con éxito",
+  "label.login.error": "Seha producido un error al loguearse"
+}
